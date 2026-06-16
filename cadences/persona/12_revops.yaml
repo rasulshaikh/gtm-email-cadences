@@ -1,0 +1,43 @@
+name: RevOps / Sales Ops Persona
+trigger: Generic. Stack efficiency, workflow automation, and data quality framing.
+persona: Head of RevOps, Sales Operations, or GTM Operations
+when_to_use: RevOps buyer. They think in systems, care about data integrity, hate manual steps.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 12
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "outbound stack at {{company}}"
+    body: |
+      {{persona_hook}}
+
+      The RevOps teams I've worked with are dealing with the same three things: bad contact data, no scoring rubric, and sequences that require daily manual intervention.
+
+      I build the upstream layer that fixes all three: automated enrichment (Playwright + Clay), AI scoring via Claude API, and n8n workflows that route replies without anyone watching a dashboard.
+
+      Happy to share the architecture — takes 20 minutes to walk through.
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "automation question"
+    body: |
+      {{first_name}},
+
+      What's the most manual step in your current outbound workflow?
+
+      Asking because that's usually where the leverage is. I've reduced research time from 6 hours/batch to 30 minutes for teams running 500+ contacts/week.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 12
+    subject: "last note"
+    body: |
+      {{first_name}} — last one.
+
+      If the ops stack becomes a priority this quarter, happy to talk through what a cleaner architecture looks like.
+
+      {{your_name}}

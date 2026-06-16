@@ -1,0 +1,47 @@
+name: CRO Persona
+trigger: Generic outreach. CRO-level framing around revenue predictability and motion design.
+persona: Chief Revenue Officer
+when_to_use: CRO at Series B+ company. Board-level pressure on pipeline predictability.
+sequence_length: 3 emails
+spacing: Day 0 / Day 6 / Day 14
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "revenue predictability at {{company}}"
+    body: |
+      {{persona_hook}}
+
+      The CROs who produce predictable pipeline aren't running more activity — they're running a better system. Signal-based targeting, AI scoring, personalized multi-channel sequences, automated reply routing.
+
+      The result: pipeline that's forecastable 6 weeks out because the inputs are consistent, not rep-dependent.
+
+      I've built that layer for revenue teams at post-Series A and Series B companies. One team went from 0 to $3.5M in pipeline in 9 months on the same headcount.
+
+      Worth 20 minutes?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 6
+    subject: "the motion design question"
+    body: |
+      {{first_name}},
+
+      There's a version of outbound that produces consistent, reportable pipeline — and a version that produces activity metrics that don't translate to revenue.
+
+      The difference is almost entirely in the upstream layer: how accounts are selected, scored, and personalized before a rep ever touches them.
+
+      Happy to share what that architecture looks like for a company at {{company}}'s stage.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 14
+    subject: "closing the loop"
+    body: |
+      {{first_name}} — won't follow up after this.
+
+      If revenue predictability becomes a board-level conversation, I'm easy to find. Good luck with Q{{current_quarter}}.
+
+      {{your_name}}

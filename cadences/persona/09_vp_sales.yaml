@@ -1,0 +1,59 @@
+name: VP Sales Persona
+trigger: Generic outreach — no specific signal. Persona-first framing.
+persona: VP Sales at B2B SaaS, 50-500 employees
+when_to_use: When you have no strong trigger signal. Lead to with quota attainment and pipeline velocity framing.
+sequence_length: 4 emails
+spacing: Day 0 / Day 4 / Day 9 / Day 17
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "pipeline velocity at {{company}}"
+    body: |
+      {{persona_hook}}
+
+      Most VP Sales I talk to have the same problem: reps are busy but pipeline is thin. The fix isn't more activity — it's better targeting upstream.
+
+      I build the enrichment and scoring layer that makes every rep's time more valuable: AI-scored accounts, signal-triggered sequences, and personalization that runs without daily ops input.
+
+      Built a system that generated $180K ARR in 6 months for a team that previously had zero outbound motion.
+
+      Open to a 20-minute call?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 4
+    subject: "re: pipeline velocity"
+    body: |
+      {{first_name}},
+
+      The outbound systems that produce consistent pipeline have one thing in common: the rep isn't spending time deciding who to contact. The system surfaces the right accounts automatically.
+
+      Score → enrich → personalize → sequence → route. No manual steps in that chain.
+
+      Happy to walk you through the architecture.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 9
+    subject: "one question for {{first_name}}"
+    body: |
+      {{first_name}} — quick one:
+
+      What percentage of your reps' time is currently spent on research and list-building vs. actual conversations?
+
+      If it's more than 30%, there's a system problem I can help fix.
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 17
+    subject: "last note"
+    body: |
+      {{first_name}} — last one from me.
+
+      If pipeline quality becomes a Q3/Q4 priority, I'm easy to find.
+
+      {{your_name}}

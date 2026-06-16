@@ -1,0 +1,55 @@
+name: Post-Demo — No Decision (Gone Quiet)
+trigger: Demo or discovery call happened, prospect went silent with no decision
+persona: Champion or Economic Buyer you met with
+when_to_use: 7-10 days after demo with no follow-up response. Don't oversell — help them make the internal case.
+sequence_length: 4 emails
+spacing: Day 0 / Day 4 / Day 10 / Day 18
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "following up from our call"
+    body: |
+      {{first_name}},
+
+      Wanted to check in after our conversation last {{call_day}}.
+
+      If you're still evaluating, happy to put together a one-page summary of what we discussed — the problem, the proposed approach, and the expected outcomes — to make the internal conversation easier.
+
+      Just let me know.
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 4
+    subject: "internal buy-in"
+    body: |
+      {{first_name}},
+
+      One thing I've learned from deals at this stage: the conversation that happens after the demo — internally — is the one that matters most.
+
+      If it would help, I can join a call with your team, put together a business case doc, or answer specific objections in writing. Whatever makes the internal conversation easier.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 10
+    subject: "quick check-in"
+    body: |
+      {{first_name}} — just checking in.
+
+      No pressure on a decision. I'd just rather know if something's changed — timing, budget, direction — than follow up into a vacuum.
+
+      Where does it stand?
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 18
+    subject: "closing this out"
+    body: |
+      {{first_name}} — last note on my end.
+
+      If the timing or budget situation changes, happy to pick this back up. I'll leave you alone until then.
+
+      {{your_name}}

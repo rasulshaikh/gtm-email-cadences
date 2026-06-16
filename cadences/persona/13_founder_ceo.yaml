@@ -1,0 +1,43 @@
+name: Founder / CEO (Startup)
+trigger: Founder-led sales, pre-VP Sales hire, or early-stage team under 50 people.
+persona: Founder or CEO doing their own outbound
+when_to_use: Founder-led sales teams. Direct, no-fluff, short emails. Founders have no patience for corporate copy.
+sequence_length: 3 emails
+spacing: Day 0 / Day 4 / Day 10
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}} outbound"
+    body: |
+      {{persona_hook}}
+
+      Quick one: are you doing your own outbound, or do you have a system that runs it for you?
+
+      I build signal-led outbound for early-stage B2B teams — enrichment, scoring, personalization, sequences. Gets you to 1.5%+ reply rates without hiring a head of sales yet.
+
+      Happy to show you what it looks like. 15 minutes.
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 4
+    subject: "re: {{company}}"
+    body: |
+      {{first_name}},
+
+      Founders who do their own outbound usually hit the same ceiling: there aren't enough hours to do it well and run the company.
+
+      The answer isn't hiring — it's a system that runs without you. I've built that for 3 early-stage teams. Happy to share what it looks like.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 10
+    subject: "last one"
+    body: |
+      {{first_name}} — won't keep following up.
+
+      If outbound becomes the priority, I'm easy to find.
+
+      {{your_name}}

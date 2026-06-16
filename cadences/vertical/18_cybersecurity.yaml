@@ -1,0 +1,53 @@
+name: Cybersecurity — CISO / Enterprise Buyer
+trigger: Cybersecurity vendor selling to enterprise CISO or IT security teams
+persona: CISO / Head of IT Security / VP of Information Security
+when_to_use: CISOs are skeptical, time-poor, and vendor-fatigued. Keep it short, lead with a specific threat or compliance angle, no product pitch in email 1.
+sequence_length: 4 emails
+spacing: Day 0 / Day 3 / Day 8 / Day 16
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s {{compliance_framework}} posture"
+    body: |
+      {{persona_hook}}
+
+      Brief on why I'm reaching out: {{company}} operates in a sector where {{threat_or_regulation}} is increasingly showing up in audit findings and board conversations.
+
+      I've helped security teams at similar organizations build the vendor evaluation process and internal business case around this — without the usual 6-month procurement cycle.
+
+      Open to a 15-minute call to compare notes?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 3
+    subject: "quick follow up"
+    body: |
+      {{first_name}} — just bumping this.
+
+      No product pitch. I'd rather spend 15 minutes understanding where {{company}}'s current exposure sits before suggesting anything.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 8
+    subject: "one question"
+    body: |
+      {{first_name}},
+
+      Is {{compliance_framework}} on the radar for {{company}}'s next audit cycle?
+
+      If yes, happy to share how similar teams are approaching the gap between current state and audit-ready.
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 16
+    subject: "last one"
+    body: |
+      {{first_name}} — last note.
+
+      If {{compliance_framework}} or {{threat_or_regulation}} becomes a board-level conversation, I'm easy to find.
+
+      {{your_name}}

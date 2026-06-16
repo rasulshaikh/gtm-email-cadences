@@ -1,0 +1,43 @@
+name: Head of Growth / VP Growth
+trigger: Growth-focused buyer at a product-led or hybrid GTM company.
+persona: Head of Growth, VP Growth, or Growth Lead at PLG or hybrid SaaS
+when_to_use: Companies with PLG motion layering in sales. Conversion and activation framing.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 11
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "outbound layer at {{company}}"
+    body: |
+      {{persona_hook}}
+
+      PLG teams leave a lot of pipeline on the table by not having a targeted outbound motion alongside product signals. The accounts showing high product engagement but not converting to paid are the highest-intent targets in your pipeline — and most teams aren't touching them with outbound.
+
+      I build signal-enriched outbound layers that sit on top of product data: usage signals, expansion triggers, and trial-to-paid conversion sequences.
+
+      Happy to walk you through what that looks like in practice.
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "product signal → outbound"
+    body: |
+      {{first_name}},
+
+      Quick question: does {{company}} have an outbound play for accounts that are active in the product but haven't converted to paid?
+
+      If not, that's typically the highest-ROI outbound motion for a PLG company. Happy to show you the architecture.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 11
+    subject: "last one"
+    body: |
+      {{first_name}} — won't follow up after this.
+
+      If the outbound-on-product-signal motion becomes a priority, I'm easy to find.
+
+      {{your_name}}

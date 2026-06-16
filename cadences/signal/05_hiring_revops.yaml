@@ -1,0 +1,43 @@
+name: Hiring RevOps Signal
+trigger: Company posted a RevOps, Sales Ops, or GTM Ops role
+persona: VP Sales / CRO / COO
+when_to_use: Hiring RevOps = they know they have a systems problem. High intent signal.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 11
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s RevOps hire"
+    body: |
+      {{persona_hook}}
+
+      Hiring RevOps is usually the tell: the stack is growing faster than the process, and someone needs to own the glue layer.
+
+      I've been that layer for early-stage teams — building the enrichment pipelines, CRM architecture, and automation workflows before there's a full-time ops hire. Gets you to a working system in 3 weeks instead of 3 months.
+
+      Open to a quick conversation about where {{company}}'s gaps are?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "the RevOps gap"
+    body: |
+      {{first_name}},
+
+      Most teams hiring RevOps are dealing with one of three things: bad data, broken handoffs, or reps working without a scoring system.
+
+      Happy to do a quick 15-minute diagnostic — I'll tell you exactly where the leverage is before you even hire.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 11
+    subject: "closing the loop"
+    body: |
+      {{first_name}} — last note.
+
+      If the ops conversation is still active, I'm available this week. Otherwise, good luck with the hire.
+
+      {{your_name}}

@@ -1,0 +1,41 @@
+name: Re-Engagement (Gone Cold)
+trigger: Prospect was previously engaged or responded but went dark 45-90+ days ago
+persona: Any — previous warm contact
+when_to_use: Lead engaged (opened, clicked, or replied positively) but went cold. Minimum 45-day gap before sending.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 10
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "checking back in"
+    body: |
+      {{first_name}},
+
+      We spoke briefly a few months ago — you'd mentioned {{previous_context}} but the timing wasn't right.
+
+      Reaching back out because {{new_trigger_or_reason}}. If the situation has changed, I'd love to reconnect.
+
+      If the timing still isn't right, no problem — I'll leave you alone.
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "re: {{company}}"
+    body: |
+      {{first_name}} — just bumping this up in case it got buried.
+
+      No pressure. If the outbound infrastructure conversation is still a few quarters out, totally fine. Just wanted to make sure this didn't get lost.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 10
+    subject: "last one"
+    body: |
+      {{first_name}} — last note from me.
+
+      Happy to reconnect whenever the timing is better. Good luck with everything at {{company}}.
+
+      {{your_name}}

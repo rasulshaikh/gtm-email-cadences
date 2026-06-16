@@ -1,0 +1,43 @@
+name: Breakup / Final Touch
+trigger: End of sequence — prospect never responded to any email
+persona: Any
+when_to_use: Final email in any sequence after 3-4 unanswered touches. Send with no attachment, no ask, maximum brevity.
+sequence_length: 1 email (standalone final touch)
+spacing: 7+ days after last email
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "closing the loop"
+    body: |
+      {{first_name}} — last one from me.
+
+      Reached out a few times about {{value_prop_one_line}} — clearly not the right time.
+
+      If {{trigger_problem}} becomes a priority, I'm easy to find.
+
+      {{your_name}}
+
+  - step: 1_alt_a
+    delay_days: 0
+    subject: "should I stop?"
+    body: |
+      {{first_name}},
+
+      Sent a few notes — no response, which is a clear signal.
+
+      Should I close the loop, or is there a better time to connect?
+
+      Either way, no hard feelings.
+
+      {{your_name}}
+
+  - step: 1_alt_b
+    delay_days: 0
+    subject: "one last thing"
+    body: |
+      {{first_name}} — I'll keep this short.
+
+      If {{company}}'s outbound motion ever needs a rebuild, I'm the person to call. Until then, I'll leave you alone.
+
+      {{your_name}}

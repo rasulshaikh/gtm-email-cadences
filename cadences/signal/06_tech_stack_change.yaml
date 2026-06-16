@@ -1,0 +1,47 @@
+name: Tech Stack Change Signal
+trigger: Company adopted new CRM, MAP, or outbound tool
+persona: RevOps / VP Sales / Head of Marketing Ops
+when_to_use: When BuiltWith or Clay tech change enrichment shows a recent CRM/sequencing tool adoption.
+sequence_length: 3 emails
+spacing: Day 0 / Day 6 / Day 13
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s {{new_tool}} rollout"
+    body: |
+      {{persona_hook}}
+
+      Stack change usually means one of two things: either the old system wasn't working, or you're scaling and need something more robust.
+
+      Either way, the window right after a tool switch is when the motion gets rebuilt — and that's the highest-leverage moment to get the architecture right the first time.
+
+      I've helped teams get full ROI from {{new_tool}} within 6 weeks: enrichment flows, personalization pipelines, routing automations. No 6-month implementation timeline.
+
+      Worth a quick call?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 6
+    subject: "{{new_tool}} question"
+    body: |
+      {{first_name}},
+
+      One thing I've seen consistently with {{new_tool}} rollouts: the teams that get results fast are the ones that pair it with a clean enrichment layer upstream.
+
+      Garbage in, garbage out — regardless of how good the tool is.
+
+      Happy to show you the data layer setup that's worked for similar teams.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 13
+    subject: "last one"
+    body: |
+      {{first_name}} — last note.
+
+      If the {{new_tool}} build-out runs into any friction, happy to help. Otherwise, good luck with the rollout.
+
+      {{your_name}}

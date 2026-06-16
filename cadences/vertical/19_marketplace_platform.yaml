@@ -1,0 +1,43 @@
+name: Marketplace / Platform — Supply-Demand GTM
+trigger: Two-sided marketplace or platform selling to both supply and demand sides
+persona: VP Growth / Head of Supply / Head of BD at a marketplace
+when_to_use: Marketplaces have dual GTM motions. Focus on whichever side is the bottleneck — usually supply at early stage.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 11
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{supply_or_demand}} side at {{company}}"
+    body: |
+      {{persona_hook}}
+
+      Two-sided marketplace GTM is harder than standard SaaS outbound because you're running two parallel motions — and the supply side especially can't be treated like a typical cold outreach list.
+
+      I've built supply-side acquisition systems for marketplaces: signal-based targeting (who's actively looking for a platform, not just who fits the ICP), personalized sequences that lead with the platform's value for the supplier, and onboarding automation that reduces time-to-first-transaction.
+
+      Worth a 20-minute call?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "supply-side acquisition"
+    body: |
+      {{first_name}},
+
+      The marketplace teams that scale supply fastest have one thing in common: they don't treat supplier acquisition like SaaS outbound. Different signals, different messaging, different onboarding sequence.
+
+      Happy to share what's worked for similar platforms.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 11
+    subject: "last one"
+    body: |
+      {{first_name}} — won't follow up after this.
+
+      If supplier acquisition becomes a Q3 priority, I'm easy to find.
+
+      {{your_name}}

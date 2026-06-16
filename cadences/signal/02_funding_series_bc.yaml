@@ -1,0 +1,59 @@
+name: Series B / C Funding Trigger
+trigger: Company raised Series B or C — scaling and professionalizing revenue
+persona: CRO / VP Sales / RevOps
+when_to_use: Within 72 hours of announcement. Series B/C means they're now expected to produce predictable pipeline.
+sequence_length: 4 emails
+spacing: Day 0 / Day 4 / Day 9 / Day 18
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}} post-Series {{funding_stage}}"
+    body: |
+      {{persona_hook}}
+
+      Series {{funding_stage}} usually means one thing: investors now expect a repeatable, measurable revenue motion — not just growth.
+
+      The GTM teams that win at this stage have infrastructure that makes every rep more effective: signal-based targeting, AI-scored lists, personalized sequences that don't require daily ops babysitting.
+
+      I build those systems. Helped one team go from $180K to $1.2M ARR in 9 months on the same headcount.
+
+      Worth 20 minutes?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 4
+    subject: "pipeline predictability at {{company}}"
+    body: |
+      {{first_name}},
+
+      The companies that struggle post-Series {{funding_stage}} are usually the ones that scaled headcount before the motion was airtight.
+
+      The ones that compound built the system first: scoring rubric, personalized multi-channel sequences, reply routing, CRM hygiene. Then hired onto it.
+
+      Happy to share what that looks like in practice.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 9
+    subject: "quick question"
+    body: |
+      {{first_name}} — direct question:
+
+      Is pipeline predictability a board-level conversation at {{company}} right now?
+
+      If yes, that's exactly the problem I solve. If no, I'll leave you alone.
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 18
+    subject: "last note"
+    body: |
+      {{first_name}} — last one.
+
+      If the revenue motion becomes a Q3/Q4 priority, happy to reconnect. Until then, good luck with the {{funding_stage}} phase.
+
+      {{your_name}}

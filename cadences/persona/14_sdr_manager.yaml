@@ -1,0 +1,43 @@
+name: SDR Manager / Director of Sales Development
+trigger: Managing an SDR team. Team productivity and ramp time framing.
+persona: SDR Manager, Director of Sales Development, or VP of Inside Sales
+when_to_use: When the buyer manages an SDR team and is accountable for pipeline-gen metrics.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 12
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "SDR productivity at {{company}}"
+    body: |
+      {{persona_hook}}
+
+      The SDR teams producing 3x the pipeline on the same headcount have one thing in common: reps aren't choosing who to contact. The system surfaces the right accounts automatically — scored, enriched, and pre-personalized.
+
+      I've built this layer for SDR teams that were previously spending 4+ hours/day on research. Cut that to under 30 minutes. Same reps, same quota, 3x the conversations.
+
+      Worth a call?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "rep ramp question"
+    body: |
+      {{first_name}},
+
+      How long does it typically take a new SDR at {{company}} to get to full ramp?
+
+      I ask because teams with a proper scoring and enrichment system ramp in 3-4 weeks instead of 90 days. The system does the hard part; the rep just executes.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 12
+    subject: "last one"
+    body: |
+      {{first_name}} — closing the loop.
+
+      If SDR productivity or ramp time becomes a Q3 focus, happy to connect.
+
+      {{your_name}}

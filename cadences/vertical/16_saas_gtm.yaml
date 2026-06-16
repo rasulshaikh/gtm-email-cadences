@@ -1,0 +1,59 @@
+name: B2B SaaS — GTM Engineering Angle
+trigger: Company is a B2B SaaS building or scaling an outbound motion
+persona: VP Sales / CRO / Founder
+when_to_use: Core ICP. Lead with GTM engineering as a function, not just a tool.
+sequence_length: 4 emails
+spacing: Day 0 / Day 4 / Day 9 / Day 16
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s outbound infrastructure"
+    body: |
+      {{persona_hook}}
+
+      Most B2B SaaS teams treat outbound as a headcount problem. The ones hitting $1M+ ARR from outbound treat it as an infrastructure problem.
+
+      GTM Engineering — the discipline of building the scoring, enrichment, and automation layer that makes every rep more effective — is how they do it. Not more SDRs. Better systems.
+
+      I've built this infrastructure for 5 B2B SaaS teams. One went from 0 to $180K ARR in 6 months without adding headcount.
+
+      Worth 20 minutes?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 4
+    subject: "the infrastructure question"
+    body: |
+      {{first_name}},
+
+      The infrastructure gap in most SaaS outbound stacks: reps are choosing who to contact based on gut feel instead of signal data.
+
+      A scoring rubric + enrichment pipeline changes that completely. Reps work the top 20% of accounts and ignore the rest. Pipeline quality goes up, activity levels go down.
+
+      Happy to show you what the stack looks like.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 9
+    subject: "GTM engineering at {{company}}"
+    body: |
+      {{first_name}} — direct question:
+
+      Does {{company}} have someone who owns the enrichment, scoring, and automation layer of the outbound stack — or does that work fall on the reps?
+
+      The answer tells me a lot about where the bottleneck is.
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 16
+    subject: "last one"
+    body: |
+      {{first_name}} — last note.
+
+      If GTM infrastructure becomes a priority this quarter, I'm easy to find.
+
+      {{your_name}}

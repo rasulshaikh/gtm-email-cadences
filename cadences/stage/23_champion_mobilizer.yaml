@@ -1,0 +1,47 @@
+name: Champion Mobilizer — Get Intro to Real Buyer
+trigger: Talking to an influencer or evaluator, not the economic buyer
+persona: Mid-level contact (IC, Manager, or Director) who is not the decision-maker
+when_to_use: "When the contact is engaged but not the buyer. Goal: get a warm intro or multi-thread to the actual decision-maker."
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 10
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "next step at {{company}}"
+    body: |
+      {{first_name}},
+
+      Thanks for the context on how {{company}} is thinking about {{topic_area}}. Helpful.
+
+      One thing I've learned: these conversations move fastest when the person who owns the budget or the mandate is in the room early — not because you can't drive it, but because it saves 2-3 unnecessary back-and-forth cycles.
+
+      Would you be open to looping in {{likely_buyer_title}} for a joint 20-minute call? Happy to do the heavy lifting on prep and agenda.
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "making the internal case"
+    body: |
+      {{first_name}},
+
+      If it's helpful, I can put together a one-page brief tailored to what {{likely_buyer_title}} would care about most — pipeline impact, time savings, or whatever the relevant metric is for {{company}} right now.
+
+      That way you have something concrete to share internally before any formal meeting.
+
+      Worth doing?
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 10
+    subject: "last note"
+    body: |
+      {{first_name}} — last note on this.
+
+      If {{likely_buyer_title}} ends up being the right next step and you'd like an intro email you can forward, I'm happy to put one together for you.
+
+      Otherwise, good luck with {{topic_area}} at {{company}}.
+
+      {{your_name}}

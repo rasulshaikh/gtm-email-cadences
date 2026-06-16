@@ -1,0 +1,47 @@
+name: Hiring SDRs / BDRs Signal
+trigger: Company posted 2+ SDR or BDR job openings
+persona: VP Sales / Head of Sales / SDR Manager
+when_to_use: When job board signals show active SDR/BDR hiring. Use Trigify or Clay job posting enrichment to detect.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 12
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s SDR hiring"
+    body: |
+      {{persona_hook}}
+
+      Hiring SDRs is a growth signal — it's also the moment the system matters most.
+
+      SDRs without infrastructure spend 70% of their time on accounts that will never buy. With a proper scoring and enrichment pipeline, that same team produces 3x the qualified pipeline on the same headcount.
+
+      I've built that layer for teams at RemoteState and Omnibound — $180K ARR in 6 months, 1.5%+ reply rates, 80% less manual research per rep.
+
+      Worth a 20-minute call before the next hire starts?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "re: {{company}} SDR ramp"
+    body: |
+      {{first_name}},
+
+      The fastest SDR ramp I've seen: don't give them accounts to work — give them a system that surfaces the right accounts automatically.
+
+      Scoring rubric, enriched list, personalized sequences, reply routing. The rep just has to show up.
+
+      Happy to walk you through what that looks like.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 12
+    subject: "last one"
+    body: |
+      {{first_name}} — won't keep following up.
+
+      If the infrastructure question comes up when the new SDRs are onboarded, I'm easy to find.
+
+      {{your_name}}

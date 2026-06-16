@@ -1,0 +1,57 @@
+name: New VP Sales Hire
+trigger: Company just hired a new VP Sales
+persona: The new VP Sales themselves
+when_to_use: Within 1 week of LinkedIn announcement or press release. New VP Sales has a narrow 90-day window to make an impact.
+sequence_length: 4 emails
+spacing: Day 0 / Day 4 / Day 10 / Day 18
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "congrats on {{company}}"
+    body: |
+      {{persona_hook}}
+
+      New VP Sales role = 90-day window to set the motion. The leaders who use that window to build infrastructure before adding headcount consistently outperform the ones who hire first.
+
+      I specialize in building the outbound layer from scratch — signal architecture, enrichment pipelines, Clay personalization, and sequences that produce 1.5%+ reply rates without burning your team on manual research.
+
+      Open to a quick call to compare notes?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 4
+    subject: "the 90-day window"
+    body: |
+      {{first_name}},
+
+      The VP Sales who builds the system in month 1 has a very different year than the one who inherits whatever was there before.
+
+      I've seen both. The infrastructure question — how leads are scored, enriched, sequenced, and routed — is the one that determines quota attainment 6 months in.
+
+      Happy to share what I've seen work at your stage.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 10
+    subject: "one question"
+    body: |
+      {{first_name}},
+
+      What does the outbound motion at {{company}} look like right now — is there a system, or is it rep-dependent?
+
+      I ask because the answer determines whether the infrastructure conversation is urgent or not.
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 18
+    subject: "closing the loop"
+    body: |
+      {{first_name}} — won't chase after this.
+
+      If the outbound infrastructure becomes a Q2/Q3 priority, I'm easy to find. Good luck with the role at {{company}}.
+
+      {{your_name}}

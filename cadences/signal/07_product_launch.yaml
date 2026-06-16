@@ -1,0 +1,45 @@
+name: Product Launch / New Feature Signal
+trigger: Company launched a new product, major feature, or entered a new market
+persona: VP Sales / CMO / Founder
+when_to_use: Within 1 week of product launch announcement. New product = new ICP = new outbound motion needed.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 12
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s launch"
+    body: |
+      {{persona_hook}}
+
+      New product launches need a new outbound motion — different ICP, different messaging, different signal layer.
+
+      Most teams reuse the old sequences on the new product and wonder why it underperforms. The ones that win build a dedicated outbound layer for the new motion from scratch.
+
+      I specialize in exactly that: ICP definition, enrichment pipeline, Clay personalization, and sequences ready to send within 3 weeks of brief.
+
+      Open to a call this week?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "launch motion question"
+    body: |
+      {{first_name}},
+
+      Quick question: does {{company}} have a dedicated outbound motion for the new product, or is the team running the same sequences with updated messaging?
+
+      I ask because the answer is usually the difference between 0.3% and 1.5%+ reply rates in month one.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 12
+    subject: "last one"
+    body: |
+      {{first_name}} — won't follow up after this.
+
+      If the launch outbound motion becomes a priority, I'm easy to find. Good luck with the rollout.
+
+      {{your_name}}

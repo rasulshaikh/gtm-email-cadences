@@ -1,0 +1,45 @@
+name: Market / Geographic Expansion
+trigger: Company opened new office, entered new market, or announced geographic expansion
+persona: VP Sales / Founder / Head of Business Development
+when_to_use: New market entry = they need to build pipeline in territory with no brand awareness. High urgency.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 11
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s expansion"
+    body: |
+      {{persona_hook}}
+
+      Entering a new market without brand recognition is the hardest version of outbound — you're starting from zero with zero trust.
+
+      The teams that do it well don't spray and pray. They build a tight ICP for the new territory, enrich with local signals, and run personalized sequences that acknowledge the cold-start explicitly.
+
+      I've done this for a UAE-based team entering the MENA enterprise market. 10+ SQLs/month from zero in 5 months.
+
+      Worth a call?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "{{territory}} pipeline question"
+    body: |
+      {{first_name}},
+
+      The fastest path to pipeline in a new market: don't try to replicate the motion that works in your home market. Different buyers, different trust patterns, different signals.
+
+      Happy to share what's worked for territory expansion at this stage.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 11
+    subject: "last one"
+    body: |
+      {{first_name}} — closing the loop.
+
+      If {{company}}'s expansion motion is still being figured out, I'm available this week. Otherwise, good luck with the new market.
+
+      {{your_name}}

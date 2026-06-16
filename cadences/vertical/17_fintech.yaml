@@ -1,0 +1,45 @@
+name: Fintech — Compliance + GTM Motion
+trigger: Fintech company with regulated sales motion
+persona: VP Sales / CRO / Head of BD at a fintech
+when_to_use: Fintech companies selling to banks, FIs, or enterprises. Compliance and trust are the trust-builders, not feature lists.
+sequence_length: 3 emails
+spacing: Day 0 / Day 5 / Day 12
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "outbound for regulated markets"
+    body: |
+      {{persona_hook}}
+
+      Selling fintech into banks and financial institutions requires a different outbound motion than standard B2B SaaS. The buying process is longer, the stakeholder map is wider, and the compliance framing has to be right from email one.
+
+      I've built GTM systems for regulated-market sales teams: multi-threaded sequences that map to committee buying, compliance-aware messaging frameworks, and enrichment that identifies regulatory trigger events (audits, DORA, PCI-DSS timelines).
+
+      Worth a 20-minute call?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 5
+    subject: "regulatory trigger approach"
+    body: |
+      {{first_name}},
+
+      The highest-converting outbound plays I've seen in fintech use regulatory events as the trigger: an upcoming audit cycle, a new compliance requirement, a recent enforcement action in the prospect's sector.
+
+      Those signals are publicly available and almost nobody is using them to time outreach.
+
+      Happy to show you how to build that signal layer.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 12
+    subject: "last one"
+    body: |
+      {{first_name}} — won't follow up after this.
+
+      If the sales motion at {{company}} needs a rethink for regulated-market buyers, happy to reconnect.
+
+      {{your_name}}

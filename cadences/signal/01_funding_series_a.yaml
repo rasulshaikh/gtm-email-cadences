@@ -1,0 +1,59 @@
+name: Series A Funding Trigger
+trigger: Company just raised Series A
+persona: Founder / VP Sales / Head of Growth
+when_to_use: Within 72 hours of funding announcement. Check Crunchbase, LinkedIn, or news alerts.
+sequence_length: 4 emails
+spacing: Day 0 / Day 3 / Day 7 / Day 14
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "{{company}}'s Series A"
+    body: |
+      {{persona_hook}}
+
+      The motion that gets a company to Series A rarely scales to $5M ARR. More reps doesn't fix a broken system — it just burns budget faster.
+
+      I've helped 3 post-Series A B2B teams build the outbound engine from scratch: enrichment, scoring, Clay pipeline, and sequences that run without a full-time ops person watching them.
+
+      Open to a 20-minute call this week?
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 3
+    subject: "re: {{company}}'s Series A"
+    body: |
+      {{first_name}} — bumping this up.
+
+      The 60 days after a raise is the best window to build the motion — budget exists, team is energized, expectations aren't set yet.
+
+      Happy to share what's worked at your stage, no pitch attached.
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 7
+    subject: "one thing I'd change post-Series A"
+    body: |
+      {{first_name}},
+
+      Most Series A teams hire 3 SDRs before the system is in place. Reps without infrastructure produce mediocre results and burn out in 6 months.
+
+      The companies that compound fastest build the system first — scoring, sequences, routing — then scale headcount onto it.
+
+      If that's a conversation happening internally, I can show you what the system looks like.
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 14
+    subject: "last one from me"
+    body: |
+      {{first_name}} — won't follow up after this.
+
+      If the outbound motion becomes a priority in Q3 or Q4, I'm easy to find.
+
+      Good luck with the next phase at {{company}}.
+
+      {{your_name}}

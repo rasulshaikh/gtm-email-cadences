@@ -1,0 +1,57 @@
+name: CMO / VP Marketing Persona
+trigger: Generic outreach. Demand gen and marketing-sourced pipeline framing.
+persona: CMO or VP Marketing at B2B SaaS
+when_to_use: When marketing owns or co-owns pipeline generation. Focus on SQL attribution and outbound-as-a-channel.
+sequence_length: 4 emails
+spacing: Day 0 / Day 4 / Day 10 / Day 18
+
+emails:
+  - step: 1
+    delay_days: 0
+    subject: "outbound as a marketing channel"
+    body: |
+      {{persona_hook}}
+
+      Most marketing teams treat outbound as a sales function. The ones generating the most pipeline own it as a channel — with the same rigor as paid: ICP definition, list quality, A/B testing, attribution.
+
+      I build signal-led outbound systems that marketing teams can own and report on: Clay enrichment pipelines, AI-personalized sequences, reply data feeding back into attribution.
+
+      Happy to share how a few teams have built this as a core demand gen channel.
+
+      {{your_name}}
+
+  - step: 2
+    delay_days: 4
+    subject: "marketing-sourced pipeline"
+    body: |
+      {{first_name}},
+
+      The outbound channel I build produces data marketing actually wants: which signals drove the reply, which copy variant won, which accounts responded at each stage.
+
+      It's not a black box — it's a reportable channel. Same logic as paid social, different medium.
+
+      Worth a call?
+
+      {{your_name}}
+
+  - step: 3
+    delay_days: 10
+    subject: "one question"
+    body: |
+      {{first_name}} — quick one:
+
+      Does {{company}} have a way to attribute pipeline to specific outbound signals today, or does it still go into a "sales-generated" bucket?
+
+      Happy to show how teams solve this.
+
+      {{your_name}}
+
+  - step: 4
+    delay_days: 18
+    subject: "last one"
+    body: |
+      {{first_name}} — last note.
+
+      If demand gen diversification is on the roadmap for H2, happy to reconnect.
+
+      {{your_name}}
